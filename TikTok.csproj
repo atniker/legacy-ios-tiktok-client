@@ -1,0 +1,197 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">iPhoneSimulator</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{4FC0CB33-970E-4AF4-AD6F-C59500576429}</ProjectGuid>
+    <ProjectTypeGuids>{6BC8ED88-2882-458C-8E55-DFD12B67127B};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>TikTok</RootNamespace>
+    <IPhoneResourcePrefix>Resources</IPhoneResourcePrefix>
+    <AssemblyName>TikTok</AssemblyName>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhoneSimulator' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\iPhoneSimulator\Debug</OutputPath>
+    <DefineConstants>DEBUG</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <MtouchLink>SdkOnly</MtouchLink>
+    <MtouchDebug>True</MtouchDebug>
+    <BuildIpa>True</BuildIpa>
+    <IpaMetadata />
+    <IpaPackageName>com.atnik.tiktok</IpaPackageName>
+    <MtouchSdkVersion>6.1</MtouchSdkVersion>
+    <MtouchProfiling>True</MtouchProfiling>
+    <MtouchExtraArgs />
+    <MtouchFastDev>False</MtouchFastDev>
+    <MtouchArch>Default, ARMv7</MtouchArch>
+    <MtouchUseLlvm>False</MtouchUseLlvm>
+    <MtouchUseThumb>False</MtouchUseThumb>
+    <MtouchUseSGen>True</MtouchUseSGen>
+    <MtouchUseRefCounting>True</MtouchUseRefCounting>
+    <MtouchOptimizePNGs>True</MtouchOptimizePNGs>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhoneSimulator' ">
+    <DebugType>none</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\iPhoneSimulator\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <MtouchLink>None</MtouchLink>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhone' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\iPhone\Debug</OutputPath>
+    <DefineConstants>DEBUG</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <MtouchDebug>true</MtouchDebug>
+    <CodesignKey>iPhone Developer</CodesignKey>
+    <BuildIpa>True</BuildIpa>
+    <IpaMetadata />
+    <IpaPackageName>com.atnik.tiktok</IpaPackageName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhone' ">
+    <DebugType>none</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\iPhone\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <CodesignKey>iPhone Developer</CodesignKey>
+    <BuildIpa>True</BuildIpa>
+    <IpaMetadata />
+    <IpaPackageName>com.atnik.tiktok</IpaPackageName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Ad-Hoc|iPhone' ">
+    <DebugType>none</DebugType>
+    <Optimize>True</Optimize>
+    <OutputPath>bin\iPhone\Ad-Hoc</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>False</ConsolePause>
+    <CodesignKey>iPhone Distribution</CodesignKey>
+    <BuildIpa>True</BuildIpa>
+    <IpaMetadata />
+    <IpaPackageName>com.atnik.tiktok</IpaPackageName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'AppStore|iPhone' ">
+    <DebugType>none</DebugType>
+    <Optimize>True</Optimize>
+    <OutputPath>bin\iPhone\AppStore</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>False</ConsolePause>
+    <CodesignKey>iPhone Distribution</CodesignKey>
+    <BuildIpa>True</BuildIpa>
+    <IpaMetadata />
+    <IpaPackageName>com.atnik.tiktok</IpaPackageName>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="AnimatedTabbar.cs" />
+    <Compile Include="Atnik\MiniJSON.cs" />
+    <Compile Include="Atnik\UserPreferences.cs" />
+    <Compile Include="Atnik\TikTok.cs" />
+    <Compile Include="Atnik\Warmboot.cs" />
+    <Compile Include="libs\securestorage\Plugin.SecureStorage.Abstractions\Plugin.SecureStorage.Abstractions\ISecureStorage.cs" />
+    <Compile Include="libs\securestorage\Plugin.SecureStorage.Abstractions\Plugin.SecureStorage.Abstractions\SecureStorageImplementationBase.cs" />
+    <Compile Include="libs\securestorage\Plugin.SecureStorage.Abstractions\Properties\AssemblyInfo.cs" />
+    <Compile Include="libs\securestorage\Plugin.SecureStorage\Plugin.SecureStorage\CrossSecureStorage.cs" />
+    <Compile Include="libs\securestorage\Plugin.SecureStorage\Plugin.SecureStorage\SecureStorageImplementation.cs" />
+    <Compile Include="libs\securestorage\Plugin.SecureStorage\Properties\AssemblyInfo.cs" />
+    <Compile Include="Main.cs" />
+    <Compile Include="AppDelegate.cs" />
+    <None Include="Info.plist" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <BundleResource Include="Resources\TikTokSans-Regular.ttf" />
+    <BundleResource Include="Resources\TikTokSans-Bold.ttf" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Views\MessagesViewController.cs" />
+    <Compile Include="Views\NotificationsViewController.cs" />
+    <Compile Include="Views\OptionsViewController.cs" />
+    <Compile Include="Views\ProfileViewController.cs" />
+    <Compile Include="Views\VideoViewController.cs" />
+    <Compile Include="Views\WelcomeViewController.cs" />
+    <BundleResource Include="Resources\Default.png" />
+    <BundleResource Include="Resources\Default@2x.png" />
+    <BundleResource Include="Resources\Default-568h@2x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="monotouch" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="libs\securestorage\Plugin.SecureStorage.Abstractions\Plugin.SecureStorage.Abstractions.csproj" />
+    <Content Include="libs\securestorage\Plugin.SecureStorage\Plugin.SecureStorage.csproj" />
+    <Content Include="libs\securestorage\Solution.sln" />
+    <BundleResource Include="Resources\pause.png" />
+    <BundleResource Include="Resources\heart.png" />
+    <BundleResource Include="Resources\comment.png" />
+    <BundleResource Include="Resources\background.jpg" />
+    <BundleResource Include="Resources\profile-avatar-skevo.png" />
+    <BundleResource Include="Resources\profile-info-back.png" />
+    <BundleResource Include="Resources\profile-pinned-rus.png" />
+    <BundleResource Include="Resources\profile-pinned-eng.png" />
+    <BundleResource Include="Resources\profile-video-info.png" />
+    <BundleResource Include="Resources\background.png" />
+    <BundleResource Include="Resources\top-background.png" />
+    <BundleResource Include="Resources\preview-placeholder.png" />
+    <BundleResource Include="Resources\profile-video-played.png" />
+    <BundleResource Include="Resources\avatar-placeholder.jpg" />
+    <BundleResource Include="Resources\description-background.png" />
+    <BundleResource Include="Resources\item-notifications.png" />
+    <BundleResource Include="Resources\item-home.png" />
+    <BundleResource Include="Resources\item-add.png" />
+    <BundleResource Include="Resources\item-account.png" />
+    <BundleResource Include="Resources\tab-search.png" />
+    <BundleResource Include="Resources\tab-settings.png" />
+    <BundleResource Include="Resources\Icon%402x.png" />
+    <BundleResource Include="Resources\icon.png" />
+    <BundleResource Include="Resources\error.png" />
+    <BundleResource Include="Resources\download.png" />
+    <BundleResource Include="Resources\autoscroll.png" />
+    <BundleResource Include="Resources\link.png" />
+    <BundleResource Include="Resources\share.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.MonoTouch.CSharp.targets" />
+</Project>

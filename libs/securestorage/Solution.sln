@@ -1,0 +1,27 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.24720.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Plugin.SecureStorage", "Plugin.SecureStorage\Plugin.SecureStorage.csproj", "{1124F6AB-A0BA-41D3-B370-30147809BE54}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Plugin.SecureStorage.Abstractions", "Plugin.SecureStorage.Abstractions\Plugin.SecureStorage.Abstractions.csproj", "{03F6485B-A0EF-4AD5-83E4-49FAE8F23170}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|AnyCPU = Debug|AnyCPU
+		Release|AnyCPU = Release|AnyCPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1124F6AB-A0BA-41D3-B370-30147809BE54}.Debug|AnyCPU.ActiveCfg = Debug|AnyCPU
+		{1124F6AB-A0BA-41D3-B370-30147809BE54}.Debug|AnyCPU.Build.0 = Debug|AnyCPU
+		{1124F6AB-A0BA-41D3-B370-30147809BE54}.Release|AnyCPU.ActiveCfg = Release|AnyCPU
+		{1124F6AB-A0BA-41D3-B370-30147809BE54}.Release|AnyCPU.Build.0 = Release|AnyCPU
+		{03F6485B-A0EF-4AD5-83E4-49FAE8F23170}.Debug|AnyCPU.ActiveCfg = Debug|AnyCPU
+		{03F6485B-A0EF-4AD5-83E4-49FAE8F23170}.Debug|AnyCPU.Build.0 = Debug|AnyCPU
+		{03F6485B-A0EF-4AD5-83E4-49FAE8F23170}.Release|AnyCPU.ActiveCfg = Release|AnyCPU
+		{03F6485B-A0EF-4AD5-83E4-49FAE8F23170}.Release|AnyCPU.Build.0 = Release|AnyCPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
